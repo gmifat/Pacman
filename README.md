@@ -46,6 +46,7 @@ Sous l'encadrement de : Mr Vincent Caronnet et Mr Maxime Basset
    
 ### Liste des dossiers et fichiers:
 
+    SQL
     Assets:  
         * Style CSS
         * Java_Script
@@ -59,7 +60,6 @@ Sous l'encadrement de : Mr Vincent Caronnet et Mr Maxime Basset
     Models:
         * Score
         * User
-    SQL
     Views:
         * account
         * game
