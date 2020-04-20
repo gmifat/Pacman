@@ -20,7 +20,7 @@ Sous l'encadrement de : Mr Vincent Caronnet et Mr Maxime Basset
 ### Motivation
 	L'objectif de notre projet est de réaliser un jeu de labyrinthe de type Pac-Man.
 	La réalisation de ce jeu vise à nous familiariser avec le développement responsive au service d'un jeu
-	on metrisant les langages html,javaScript, css et PHP et l'architecture MVC.
+	on metrisant les langages HTML, JavaScript, CSS, PHP et l'architecture MVC.
 
 
 ### Commandes importantes:
