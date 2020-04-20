@@ -4,7 +4,8 @@
 
 	Ce projet concerne le développement d'une version du jeu PacMan.
 	PacMan est commandé par l'utilisateur à travers une interface graphique crée à partir d'une maquette xd. 
-	Il doit se déplacer dans une "labyrinthe" en faisant face à des  fantômes,dont les comportements évoluent avec le niveau de jeu.
+	Il doit se déplacer dans une "labyrinthe" en faisant face à des  fantômes,
+	dont les comportements évoluent avec le niveau de jeu.
 
 ### Equipe:
 
