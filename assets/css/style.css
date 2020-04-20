@@ -1,0 +1,242 @@
+.logon-bg-container{
+    height: 100%;
+    width: 75%;
+    background-image: url("../img/pacman_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+
+}
+
+.logon-main-container{
+    position: absolute;
+    top: calc((100vh - 56.25vw) / 2) ;
+    right: 0;
+    width: 45%;
+    height: 56.25vw;
+    /*background: #99D5D5D5;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/container_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    color : #707070;
+}
+
+.logon-lost-password{
+    position: absolute;
+    bottom: calc((100vh - 56.25vw + 20px) / 2) ;
+    right: 20px;
+    color: #2E1458;
+}
+
+.logon-username, .logon-password, .logon-actions{
+    margin: 0 2vw 1vw 0;
+    width: 31.25vw;
+    height: 5vw;
+    background-image: url("../img/bg_div.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logon-label{
+    width: 30%;
+    margin-left: 5%;
+    font-size: 2vw;
+}
+.logon-input, .logon-input-password{
+    border-width: 0 0 2px 0;
+    width: 60%;
+    margin-right: 5%;
+    height: 4vw;
+    font-size: 2vw;
+}
+.logon-input-password{
+    margin: 0 0 0 1vw;
+}
+
+
+#trigger {
+    display: none;
+}
+.checker {
+    background-image: url("../img/eye.png");
+    background-position: center;
+    background-size: auto 100%;
+    width: 5vw;
+    height: 5vw;
+    background-repeat: no-repeat;
+    margin-right: 1vw;
+}
+#trigger:checked + .checker {
+    background-image: url("../img/eye-hidden.png");
+}
+
+.logon-actions, .account-actions{
+    background-image: unset;
+    justify-content: space-between;
+}
+.account-actions{
+    height: 7vw;
+}
+
+.logon-actions-connect{
+    background-image: url("../img/logon.png") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    width: 40%;
+    height: 5vw;
+    background-color: transparent;
+    border-width: 2px;
+    border-radius: 5px;
+    margin: 0;
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+.account-submit, .logon-actions a {
+    background-image: url("../img/bg_signup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 60%;
+    line-height: 250%;
+    font-size: 2vw;
+    padding-left: 3%;
+    text-decoration: none;
+    color : #707070;
+    cursor: pointer;
+}
+
+.account-submit{
+    background-color: transparent;
+    border-color: transparent;
+    width: 80%;
+    text-align: left;
+}
+
+.message-ok, .account-error-message{
+ position: absolute;
+    top: 2vw;
+    right: 2vw;
+    font-size: 3vw;
+    width: 80%;
+    text-align: center;
+}
+
+.message-ok{
+    color: #FBEE07;
+}
+
+.account-error-message {
+    color: #F40A48;
+}
+
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .logon-bg-container{
+
+        width: 100%;
+        height: 50%;
+        background-position: top center;
+        background-size: cover;
+
+    }
+
+    .logon-main-container{
+        padding-top: 10%;
+        background-image:linear-gradient(#FCFEFE, #6CE7F2);
+        width: 100%;
+        height: 50%;
+        top : 50%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logon-lost-password{
+        bottom: 10px;
+        right: 20px;
+    }
+
+    .logon-username, .logon-password, .logon-actions{
+        /*margin: 0 2vw 1vw 0;*/
+        width: 85%;
+        height: 20%;
+
+        background-size: contain;
+        background-position: left center;
+
+        background-image: url("../img/bg_div.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .logon-label{
+        width: 25%;
+        margin-left: 5%;
+        font-size: 100%;
+    }
+    .logon-input, .logon-input-password{
+        border-width: 0 0 2px 0;
+        width: 60%;
+        height: 50%;
+        font-size: 100%;
+    }
+    .logon-input-password{
+        margin: 0 0 0 1vw;
+    }
+
+    .logon-actions, .account-actions{
+        background-image: unset;
+        justify-content: space-between;
+    }
+
+    .account-submit, .logon-actions a {
+
+        height: 90%;
+        width: 65%;
+        line-height: 300%;
+        font-size: 100%;
+        padding-left: 5%;
+        background-size: contain;
+    }
+
+    .account-submit{
+        background-color: transparent;
+        border-color: transparent;
+        width: 80%;
+        text-align: left;
+    }
+
+
+    .logon-actions-connect{
+        width: 35%;
+        height: 100%;
+        background-color: transparent;
+        border-width: 2px;
+        border-radius: 5px;
+        margin: 0;
+        text-align: left;
+        font-size: 80%;
+    }
+
+}

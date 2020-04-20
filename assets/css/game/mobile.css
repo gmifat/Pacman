@@ -1,0 +1,46 @@
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .pause-resume{
+        position: absolute;
+        left: 5vw;
+        top: calc(50vh - 40px);
+        width: 80px;
+        height: 80px;
+    }
+
+    .joystick{
+        position: absolute;
+        right: 5vw;
+        top: calc(50vh - 40px);
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .pause-resume{
+        position: absolute;
+        left: 5vw;
+        bottom: 5vw;
+        width: 80px;
+        height: 80px;
+    }
+
+    .joystick{
+        position: absolute;
+        right: 5vw;
+        bottom: 5vw;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 319px) {
+
+    /* écran trop petit*/
+    .container{
+        visibility: hidden;
+    }
+}

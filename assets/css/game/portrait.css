@@ -1,0 +1,108 @@
+@media (orientation: portrait) and (max-width: 1050px) {
+    .map {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .container {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    img[src="./img/background.svg"] {
+        height: 90vw;
+        width: 90vw;
+    }
+
+    .pause-resume{
+        position: absolute;
+        top: unset !important;
+        right: 5vw;
+        bottom: 5vw;
+        width: 80px;
+        height: 80px;
+    }
+
+    header{
+        height: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .header-container{
+        height: 5vw;
+    }
+
+    .header-container div {
+        font-size: 2vw;
+    }
+
+    .helper{
+        position: fixed;
+        top: 5.5vw;
+        left: 5vw;
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .helper img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .logout{
+        position: fixed;
+        top : 5.5vw;
+        right: 5vw;
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .logout a img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .character, .fruit {
+        padding: calc(90vw * 15 / 1000);
+        width: calc(90vw * 100 / 1000);
+        height: calc(90vw * 100 / 1000);
+    }
+
+    #pac-man {
+        top: calc(90vw * 500 / 1000);
+        left: calc(90vw * 500 / 1000);
+        padding: calc(90vw * 15 / 1000);
+        width: calc(90vw * 100 / 1000);
+        height: calc(90vw * 100 / 1000);
+    }
+
+    .red-ghost {
+        top: calc(90vw * 300 / 1000);
+        left: calc(90vw * 400 / 1000);
+    }
+	
+    .yellow-ghost {
+        top: calc(90vw * 400 / 1000);
+        left: calc(90vw * 400 / 1000);
+    }
+
+    .pink-ghost {
+        top: calc(90vw * 400 / 1000);
+        left: calc(90vw * 500 / 1000);
+    }
+
+    .dot, .magicDot  {
+        width: calc(90vw * 100 / 1000);
+        height: calc(90vw * 100 / 1000);
+    }
+
+    .dot::before {
+        width: calc(90vw * 20 / 1000);
+        height: calc(90vw * 20 / 1000);
+    }
+
+    .magicDot::before {
+        width: calc(90vw * 40 / 1000);
+        height: calc(90vw * 40 / 1000);
+    }
+}
