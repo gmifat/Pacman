@@ -41,7 +41,8 @@ Sous l'encadrement de : Mr Vincent Caronnet et Mr Maxime Basset
     Les scores sont sauvegardés dans la base de donnée
     Au démarrage de jeu et à la fin de chaque étape le tableau de score est affiché.
     Le jeu est constitué de plusieurs niveaux.
-    Un fruit apparait dans une position aléatoire disponible (vide et accessible par pac-man) par niveau si le joueur arrive à manger 65 pac-gomme. Ce dernier reste affiché 10 secondes
+    Un fruit apparait dans une position aléatoire disponible (vide et accessible par pac-man) par niveau 
+    si le joueur arrive à manger 65 pac-gomme. Ce dernier reste affiché 10 secondes
     Pac-man a trois vies
     des super pac-gommes apparaissent dans les 4 coins de labyrinthe et inversent les rôles pendant 10 secondes
    
