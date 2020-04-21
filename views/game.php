@@ -2,7 +2,7 @@
         <img src="./assets/img/game/username.png" alt="username logo">
         <div class="header-container">
             <div class="username">
-                <?=$username?>
+                <?= $username ?>
             </div>
             <div class="game-level">
                 LEVEL : <span id="level">1</span>

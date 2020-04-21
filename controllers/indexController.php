@@ -12,7 +12,8 @@
             require 'models/User.php';
             $return = FindUser($_POST['username'], $_POST['password']);
 
-            if ($return === false) {
+            if ($return === false)
+            {
                 //
                 $error_message = "Login ou mot de passe incorrect";
             }
@@ -25,17 +26,18 @@
                 exit;
             }
         }
-    } else if (isset($_GET['disconnect'])) {
+    } else if (isset($_GET['disconnect']))
+    {
         // remove all session variables
         session_unset();
 
         // destroy the session
         session_destroy();
-    } else if (isset($_SESSION["username"]) && !empty($_SESSION["username"])) {
+    } else if (isset($_SESSION["username"]) && !empty($_SESSION["username"]))
+    {
         header('Location:index.php?p=game');
         exit;
     }
-
 
 
      include 'views/index.php';

@@ -12,43 +12,42 @@
         <title>Pac-Man JPO</title>
     </head>
     <body>
-    <script>
-        function showHidePassword() {
-            let pwd = document.getElementById("password");
-            if (pwd.type === "password") {
-                pwd.type = "text";
-            } else {
-                pwd.type = "password";
+        <script>
+            function showHidePassword()
+            {
+                let pwd = document.getElementById("password");
+                if (pwd.type === "password") {
+                    pwd.type = "text";
+                } else {
+                    pwd.type = "password";
+                }
             }
-        }
-    </script>
-    <?php
+        </script>
+        <?php
 
-        session_start();
+            session_start();
 
-        require_once ('helpers.php');
+            require_once ('helpers.php');
 
-        if(isset($_GET['p'])):
-            switch ($_GET['p']):
-                case 'account' :
-                    require 'controllers/accountController.php';
-                    break;
+            if(isset($_GET['p'])):
+                switch ($_GET['p']):
+                    case 'account' :
+                        require 'controllers/accountController.php';
+                        break;
 
-                case 'game' :
-                    require 'controllers/gameController.php';
-                    break;
+                    case 'game' :
+                        require 'controllers/gameController.php';
+                        break;
 
-                case 'ajax':
-                    require 'controllers/ajaxController.php';
-                    break;
-                default :
-                    require 'controllers/indexController.php';
-            endswitch;
-        else:
-            require 'controllers/indexController.php';
-        endif;
-
-
-    ?>
+                    case 'ajax':
+                        require 'controllers/ajaxController.php';
+                        break;
+                    default :
+                        require 'controllers/indexController.php';
+                endswitch;
+            else:
+                require 'controllers/indexController.php';
+            endif;
+        ?>
     </body>
 </html>
