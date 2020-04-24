@@ -201,7 +201,7 @@ header img{
 /*********************************************/
 /*********POPUP 10 MEILLEURS SCORES**********/
 /*********************************************/
-.pause, .top-ten
+.pause, .top-ten, .help
 {
     position: absolute;
     top: 0;
@@ -224,6 +224,14 @@ header img{
     flex-direction: column;
     border-radius: 20px;
 }
+
+.help-content{
+    color: black;
+    background-color: #ffffff;
+    padding: 0 20px 10px 20px;
+    width: 70%;
+    border-radius: 20px;
+  }
 
 /* FIN DE JEU*/
 .game-over{
@@ -325,6 +333,17 @@ top-ten-table-score{
     width: 48px;
     height: 48px;
 }
+
+.help-title {
+    height: auto;
+    width: 100%;
+    margin-bottom: 12px;
+    color: #17193A;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 .logout{
     position: fixed;

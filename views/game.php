@@ -50,10 +50,32 @@
                 <a class="top-ten-start" href="#" onclick="closeTopTenScore();">COMMENCER</a>
             </div>
         </div>
+        <div class="help">
+            <div class="help-content">
+                <div class="help-title">PAC-MAN</div>
+                <p>Bienvenue dans le jeu PAC-MAN</p>
+                <p>Vous pouvez utiliser le clavier sur PC </p>
+                <ul>
+                   <li>Flèche haut : déplacement en haut</li>
+                    <li>Flèche bas : déplacement vers le bas</li>
+                    <li>Flèche droite : déplacement vers la droite</li>
+                    <li>Flèche gauche : déplacement vers la gauche</li>
+                    <li>Enter : Commencer le jeu</li>
+                    <li>Espace : Pause/reprendre</li>
+                    <li>TOP 10 : Afficher les scores</li>
+                </ul>
+                <img width="64px" src="./assets/img/game/logout.png">
+                <span>Déconnexion : revenir au menu principal</span>
+                <hr>
+                <img width="64px" src="./assets/img/game/joystick.PNG">
+                <span>et Utilisation d'une croix multidirectionnelle sur mobile</span>
+                <a class="top-ten-start" href="#" onclick="closeHelp();">TOUT COMPRIS !!!</a>
+            </div>
+        </div>
     </div>
     <div class="helper">
         <a>
-            <img src="./assets/img/game/help.png" alt="help icon">
+            <img onclick="displayHelp();" src="./assets/img/game/help.png" alt="help icon">
         </a>
     </div>
     <div class="logout">

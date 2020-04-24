@@ -6,6 +6,7 @@ const gameOver = document.querySelector('.game-over');
 const gameOverScore = document.querySelector('.game-over-score');
 const topTenStart = document.querySelector('.top-ten-start');
 const topTenElement = document.querySelector('.top-ten');
+const helpContent = document.querySelector('.help-content');
 const numberOfLifeElement = document.querySelector('span[id="number-of-life"]');
 const joystick = document.querySelector('.joystick');
 const bestScore = document.querySelector('span[id="best-score"]');
@@ -148,7 +149,7 @@ const isGameOver = () =>
                     console.log(json);
                     let score_data = json;
                     // ré afficher son meilleur score
-                    bestScore.content = score_data.best_score;
+                    bestScore.innerHTML = score_data.best_score;
                 }
             ).catch(
                 error => console.log(error)
@@ -325,7 +326,7 @@ addEventListener('keydown', e =>
 {
     // Si le tableau des scores est affiché ou le jeu n'est pas en cours ou
     // le jeu en pause en n'accepte que l'espace
-    if (topTenElement.style.visibility === 'visible' || isGameInProgress === false || (isGamePaused === true && e.keyCode !== 32))
+    if (topTenElement.style.visibility === 'visible' ||  helpContent.style.visibility === 'visible'  || isGameInProgress === false || (isGamePaused === true && e.keyCode !== 32))
     {
         return;
     }
@@ -459,7 +460,7 @@ const showTopTenScores = () =>
         json =>
         {
             let score_data = json;
-            bestScore.content = score_data.best_score;
+            bestScore.innerHTML = score_data.best_score;
             tableContent = '';
 
             const scoresList = score_data.scores.map(score =>
@@ -483,6 +484,7 @@ const closeTopTenScore = () =>
     // cacher le tableau et afficher le bouton pause play
     topTenElement.style.visibility = 'hidden';
     pauseImage.style.display = 'block';
+    helpContent.style.visibility = 'hidden';
 
     // si on est en mobile on affiche le joystick
     if (window.matchMedia('(min-width: 481px) and (max-width: 767px), (min-width: 320px) and (max-width: 480px)').matches === true)
@@ -514,3 +516,44 @@ const closeTopTenScore = () =>
 
 // Affichage du tableau des scores
 showTopTenScores();
+
+const displayHelp = () =>
+{
+    helpContent.style.visibility = 'visible';
+
+    // On garde l'état de jeu avant affichage top ten
+     gameStateBeforeShowTopTen = isGamePaused;
+    // si le jeu n'est pas en pause, on l'arrête
+     if (isGamePaused === false)
+     {
+        pauseOrResumeGame();
+     }
+
+    // Cacher la joystick et les boutons pauses/play
+    joystick.style.display = 'none';
+    pauseImage.style.display = 'none';
+
+
+};
+
+const closeHelp = () =>
+{
+    helpContent.style.visibility = 'hidden';
+
+    if (isGameLoaded === true)
+    {
+        pauseImage.style.display = 'block';
+
+        // si on est en mobile on affiche le joystick
+        if (window.matchMedia('(min-width: 481px) and (max-width: 767px), (min-width: 320px) and (max-width: 480px)').matches === true)
+        {
+            joystick.style.display = 'block';
+        }
+
+        if (gameStateBeforeShowTopTen === false)
+        {
+            // resume game, l'utilisateur à cliquer sur le lien en cours de jeu
+            pauseOrResumeGame();
+        }
+    }
+};
